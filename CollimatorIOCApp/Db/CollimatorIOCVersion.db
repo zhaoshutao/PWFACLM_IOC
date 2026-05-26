@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2015 Argonne National Laboratory
+#
+# SPDX-License-Identifier: EPICS
+
+record(lsi, "$(user):CollimatorIOC:version") {
+    field(DTYP, "CollimatorIOC version")
+    field(DESC, "Version string")
+    field(SIZV, "$(SIZV=200)")
+    field(PINI, "YES")
+}

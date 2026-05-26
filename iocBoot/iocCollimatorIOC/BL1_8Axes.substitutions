@@ -1,0 +1,477 @@
+# ================================================================
+# BL1 8-Axis Collimator EPICS IOC - PV Substitutions
+# PLC: 192.168.201.137:502  (single TwinCAT PLC, 8 axes)
+# Generated from GVL.TcGVL register map
+# Base register: 12288 = %MW0
+# ================================================================
+
+# ===== BO: EPICS -> PLC (fc=6, write single register) =====
+
+# --- BL1COLV01 Global BO ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLV01:, btn_E_STOP, BL1_BO_Global, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, m_restartTC, BL1_BO_Global, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_Move_AxisAll, BL1_BO_AllAxes, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_JogForward_AxisAll, BL1_BO_AllAxes, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_JogBackward_AxisAll, BL1_BO_AllAxes, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_Stop_AxisAll, BL1_BO_AllAxes, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_Reset_AxisAll, BL1_BO_AllAxes, 0, 0x0010, Low, High }
+}
+
+# --- BL1COLH01 Global BO ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLH01:, btn_E_STOP, BL1_BO_Global, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, m_restartTC, BL1_BO_Global, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_Move_AxisAll, BL1_BO_AllAxes, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_JogForward_AxisAll, BL1_BO_AllAxes, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_JogBackward_AxisAll, BL1_BO_AllAxes, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_Stop_AxisAll, BL1_BO_AllAxes, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_Reset_AxisAll, BL1_BO_AllAxes, 0, 0x0010, Low, High }
+}
+
+# --- BL1COLV02 Global BO ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLV02:, btn_E_STOP, BL1_BO_Global, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, m_restartTC, BL1_BO_Global, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_Move_AxisAll, BL1_BO_AllAxes, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_JogForward_AxisAll, BL1_BO_AllAxes, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_JogBackward_AxisAll, BL1_BO_AllAxes, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_Stop_AxisAll, BL1_BO_AllAxes, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_Reset_AxisAll, BL1_BO_AllAxes, 0, 0x0010, Low, High }
+}
+
+# --- BL1COLH02 Global BO ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLH02:, btn_E_STOP, BL1_BO_Global, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, m_restartTC, BL1_BO_Global, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_Move_AxisAll, BL1_BO_AllAxes, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_JogForward_AxisAll, BL1_BO_AllAxes, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_JogBackward_AxisAll, BL1_BO_AllAxes, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_Stop_AxisAll, BL1_BO_AllAxes, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_Reset_AxisAll, BL1_BO_AllAxes, 0, 0x0010, Low, High }
+}
+
+# --- BL1COLV01 TopAxis BO (PLC Axis 1) ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLV01:, btn_Move_TopAxis, BL1_BO_Axis1, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_JogForward_TopAxis, BL1_BO_Axis1, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_JogBackward_TopAxis, BL1_BO_Axis1, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_Stop_TopAxis, BL1_BO_Axis1, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_Reset_TopAxis, BL1_BO_Axis1, 0, 0x0010, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_SetPosition_TopAxis, BL1_BO_Axis1, 0, 0x0020, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, LVDTTop_FunctionOn, BL1_BO_Axis1, 0, 0x0040, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, LVDTTop_ManualReleaseAlarm, BL1_BO_Axis1, 0, 0x0080, Low, High }
+}
+
+# --- BL1COLV01 BottomAxis BO (PLC Axis 2) ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLV01:, btn_Move_BottomAxis, BL1_BO_Axis2, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_JogForward_BottomAxis, BL1_BO_Axis2, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_JogBackward_BottomAxis, BL1_BO_Axis2, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_Stop_BottomAxis, BL1_BO_Axis2, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_Reset_BottomAxis, BL1_BO_Axis2, 0, 0x0010, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_SetPosition_BottomAxis, BL1_BO_Axis2, 0, 0x0020, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, LVDTBottom_FunctionOn, BL1_BO_Axis2, 0, 0x0040, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, LVDTBottom_ManualReleaseAlarm, BL1_BO_Axis2, 0, 0x0080, Low, High }
+}
+
+# --- BL1COLH01 LeftAxis BO (PLC Axis 3) ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLH01:, btn_Move_LeftAxis, BL1_BO_Axis3, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_JogForward_LeftAxis, BL1_BO_Axis3, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_JogBackward_LeftAxis, BL1_BO_Axis3, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_Stop_LeftAxis, BL1_BO_Axis3, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_Reset_LeftAxis, BL1_BO_Axis3, 0, 0x0010, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_SetPosition_LeftAxis, BL1_BO_Axis3, 0, 0x0020, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, LVDTLeft_FunctionOn, BL1_BO_Axis3, 0, 0x0040, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, LVDTLeft_ManualReleaseAlarm, BL1_BO_Axis3, 0, 0x0080, Low, High }
+}
+
+# --- BL1COLH01 RightAxis BO (PLC Axis 4) ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLH01:, btn_Move_RightAxis, BL1_BO_Axis4, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_JogForward_RightAxis, BL1_BO_Axis4, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_JogBackward_RightAxis, BL1_BO_Axis4, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_Stop_RightAxis, BL1_BO_Axis4, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_Reset_RightAxis, BL1_BO_Axis4, 0, 0x0010, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_SetPosition_RightAxis, BL1_BO_Axis4, 0, 0x0020, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, LVDTRight_FunctionOn, BL1_BO_Axis4, 0, 0x0040, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, LVDTRight_ManualReleaseAlarm, BL1_BO_Axis4, 0, 0x0080, Low, High }
+}
+
+# --- BL1COLV02 TopAxis BO (PLC Axis 5) ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLV02:, btn_Move_TopAxis, BL1_BO_Axis5, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_JogForward_TopAxis, BL1_BO_Axis5, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_JogBackward_TopAxis, BL1_BO_Axis5, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_Stop_TopAxis, BL1_BO_Axis5, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_Reset_TopAxis, BL1_BO_Axis5, 0, 0x0010, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_SetPosition_TopAxis, BL1_BO_Axis5, 0, 0x0020, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, LVDTTop_FunctionOn, BL1_BO_Axis5, 0, 0x0040, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, LVDTTop_ManualReleaseAlarm, BL1_BO_Axis5, 0, 0x0080, Low, High }
+}
+
+# --- BL1COLV02 BottomAxis BO (PLC Axis 6) ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLV02:, btn_Move_BottomAxis, BL1_BO_Axis6, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_JogForward_BottomAxis, BL1_BO_Axis6, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_JogBackward_BottomAxis, BL1_BO_Axis6, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_Stop_BottomAxis, BL1_BO_Axis6, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_Reset_BottomAxis, BL1_BO_Axis6, 0, 0x0010, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_SetPosition_BottomAxis, BL1_BO_Axis6, 0, 0x0020, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, LVDTBottom_FunctionOn, BL1_BO_Axis6, 0, 0x0040, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, LVDTBottom_ManualReleaseAlarm, BL1_BO_Axis6, 0, 0x0080, Low, High }
+}
+
+# --- BL1COLH02 LeftAxis BO (PLC Axis 7) ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLH02:, btn_Move_LeftAxis, BL1_BO_Axis7, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_JogForward_LeftAxis, BL1_BO_Axis7, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_JogBackward_LeftAxis, BL1_BO_Axis7, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_Stop_LeftAxis, BL1_BO_Axis7, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_Reset_LeftAxis, BL1_BO_Axis7, 0, 0x0010, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_SetPosition_LeftAxis, BL1_BO_Axis7, 0, 0x0020, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, LVDTLeft_FunctionOn, BL1_BO_Axis7, 0, 0x0040, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, LVDTLeft_ManualReleaseAlarm, BL1_BO_Axis7, 0, 0x0080, Low, High }
+}
+
+# --- BL1COLH02 RightAxis BO (PLC Axis 8) ---
+file "../../db/bo_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM }
+{ PWFA:BL1:COL:BL1COLH02:, btn_Move_RightAxis, BL1_BO_Axis8, 0, 0x0001, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_JogForward_RightAxis, BL1_BO_Axis8, 0, 0x0002, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_JogBackward_RightAxis, BL1_BO_Axis8, 0, 0x0004, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_Stop_RightAxis, BL1_BO_Axis8, 0, 0x0008, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_Reset_RightAxis, BL1_BO_Axis8, 0, 0x0010, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_SetPosition_RightAxis, BL1_BO_Axis8, 0, 0x0020, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, LVDTRight_FunctionOn, BL1_BO_Axis8, 0, 0x0040, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, LVDTRight_ManualReleaseAlarm, BL1_BO_Axis8, 0, 0x0080, Low, High }
+}
+
+# ===== AO: EPICS -> PLC REAL params (fc=16) =====
+# Registers: 12388 (offset 100) = %MW100 = %MB200
+
+file "../../db/aoFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC }
+{ PWFA:BL1:COL:BL1COLV01:, targetPositionTopAxis, BL1_AO_FLOAT, 0, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, targetVelocityTopAxis, BL1_AO_FLOAT, 2, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, increaseJogPositionTopAxis, BL1_AO_FLOAT, 4, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, TopAxis_minPosition, BL1_AO_FLOAT, 8, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, TopAxis_maxPosition, BL1_AO_FLOAT, 10, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, LVDTTop_Threshold, BL1_AO_FLOAT, 6, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, PositionSetValue_TopAxis, BL1_AO_FLOAT, 12, FLOAT32_LE, -1e6, 1e6, 4 }
+}
+
+file "../../db/aoFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC }
+{ PWFA:BL1:COL:BL1COLV01:, targetPositionBottomAxis, BL1_AO_FLOAT, 14, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, targetVelocityBottomAxis, BL1_AO_FLOAT, 16, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, increaseJogPositionBottomAxis, BL1_AO_FLOAT, 18, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, BottomAxis_minPosition, BL1_AO_FLOAT, 22, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, BottomAxis_maxPosition, BL1_AO_FLOAT, 24, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, LVDTBottom_Threshold, BL1_AO_FLOAT, 20, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV01:, PositionSetValue_BottomAxis, BL1_AO_FLOAT, 26, FLOAT32_LE, -1e6, 1e6, 4 }
+}
+
+file "../../db/aoFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC }
+{ PWFA:BL1:COL:BL1COLH01:, targetPositionLeftAxis, BL1_AO_FLOAT, 28, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, targetVelocityLeftAxis, BL1_AO_FLOAT, 30, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, increaseJogPositionLeftAxis, BL1_AO_FLOAT, 32, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, LeftAxis_minPosition, BL1_AO_FLOAT, 36, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, LeftAxis_maxPosition, BL1_AO_FLOAT, 38, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, LVDTLeft_Threshold, BL1_AO_FLOAT, 34, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, PositionSetValue_LeftAxis, BL1_AO_FLOAT, 40, FLOAT32_LE, -1e6, 1e6, 4 }
+}
+
+file "../../db/aoFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC }
+{ PWFA:BL1:COL:BL1COLH01:, targetPositionRightAxis, BL1_AO_FLOAT, 42, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, targetVelocityRightAxis, BL1_AO_FLOAT, 44, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, increaseJogPositionRightAxis, BL1_AO_FLOAT, 46, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, RightAxis_minPosition, BL1_AO_FLOAT, 50, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, RightAxis_maxPosition, BL1_AO_FLOAT, 52, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, LVDTRight_Threshold, BL1_AO_FLOAT, 48, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH01:, PositionSetValue_RightAxis, BL1_AO_FLOAT, 54, FLOAT32_LE, -1e6, 1e6, 4 }
+}
+
+file "../../db/aoFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC }
+{ PWFA:BL1:COL:BL1COLV02:, targetPositionTopAxis, BL1_AO_FLOAT, 56, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, targetVelocityTopAxis, BL1_AO_FLOAT, 58, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, increaseJogPositionTopAxis, BL1_AO_FLOAT, 60, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, TopAxis_minPosition, BL1_AO_FLOAT, 64, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, TopAxis_maxPosition, BL1_AO_FLOAT, 66, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, LVDTTop_Threshold, BL1_AO_FLOAT, 62, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, PositionSetValue_TopAxis, BL1_AO_FLOAT, 68, FLOAT32_LE, -1e6, 1e6, 4 }
+}
+
+file "../../db/aoFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC }
+{ PWFA:BL1:COL:BL1COLV02:, targetPositionBottomAxis, BL1_AO_FLOAT, 70, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, targetVelocityBottomAxis, BL1_AO_FLOAT, 72, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, increaseJogPositionBottomAxis, BL1_AO_FLOAT, 74, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, BottomAxis_minPosition, BL1_AO_FLOAT, 78, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, BottomAxis_maxPosition, BL1_AO_FLOAT, 80, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, LVDTBottom_Threshold, BL1_AO_FLOAT, 76, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLV02:, PositionSetValue_BottomAxis, BL1_AO_FLOAT, 82, FLOAT32_LE, -1e6, 1e6, 4 }
+}
+
+file "../../db/aoFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC }
+{ PWFA:BL1:COL:BL1COLH02:, targetPositionLeftAxis, BL1_AO_FLOAT, 84, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, targetVelocityLeftAxis, BL1_AO_FLOAT, 86, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, increaseJogPositionLeftAxis, BL1_AO_FLOAT, 88, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, LeftAxis_minPosition, BL1_AO_FLOAT, 92, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, LeftAxis_maxPosition, BL1_AO_FLOAT, 94, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, LVDTLeft_Threshold, BL1_AO_FLOAT, 90, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, PositionSetValue_LeftAxis, BL1_AO_FLOAT, 96, FLOAT32_LE, -1e6, 1e6, 4 }
+}
+
+file "../../db/aoFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC }
+{ PWFA:BL1:COL:BL1COLH02:, targetPositionRightAxis, BL1_AO_FLOAT, 98, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, targetVelocityRightAxis, BL1_AO_FLOAT, 100, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, increaseJogPositionRightAxis, BL1_AO_FLOAT, 102, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, RightAxis_minPosition, BL1_AO_FLOAT, 106, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, RightAxis_maxPosition, BL1_AO_FLOAT, 108, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, LVDTRight_Threshold, BL1_AO_FLOAT, 104, FLOAT32_LE, -1e6, 1e6, 4 }
+{ PWFA:BL1:COL:BL1COLH02:, PositionSetValue_RightAxis, BL1_AO_FLOAT, 110, FLOAT32_LE, -1e6, 1e6, 4 }
+}
+
+# ===== BI: PLC -> EPICS status (fc=3, read) =====
+
+# --- BL1COLV01 Global BI ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLV01:, E_STOP_led, BL1_BI_Global, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, Local_led, BL1_BI_Global, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, Remote_led, BL1_BI_Global, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, Error_led, BL1_BI_Global, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# --- BL1COLH01 Global BI ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLH01:, E_STOP_led, BL1_BI_Global, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, Local_led, BL1_BI_Global, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, Remote_led, BL1_BI_Global, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, Error_led, BL1_BI_Global, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# --- BL1COLV02 Global BI ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLV02:, E_STOP_led, BL1_BI_Global, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, Local_led, BL1_BI_Global, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, Remote_led, BL1_BI_Global, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, Error_led, BL1_BI_Global, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# --- BL1COLH02 Global BI ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLH02:, E_STOP_led, BL1_BI_Global, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, Local_led, BL1_BI_Global, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, Remote_led, BL1_BI_Global, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, Error_led, BL1_BI_Global, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# --- BL1COLV01 TopAxis BI (PLC Axis 1) ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLV01:, TopAxis_error, BL1_BI_Axis1, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, TopAxis_moving, BL1_BI_Axis1, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, foreward_limit_TopAxis, BL1_BI_Axis1, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, backward_limit_TopAxis, BL1_BI_Axis1, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, Moving_done_TopAxis, BL1_BI_Axis1, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, PositionSetDone_TopAxis, BL1_BI_Axis1, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# --- BL1COLV01 BottomAxis BI (PLC Axis 2) ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLV01:, BottomAxis_error, BL1_BI_Axis2, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, BottomAxis_moving, BL1_BI_Axis2, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, foreward_limit_BottomAxis, BL1_BI_Axis2, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, backward_limit_BottomAxis, BL1_BI_Axis2, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, Moving_done_BottomAxis, BL1_BI_Axis2, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, PositionSetDone_BottomAxis, BL1_BI_Axis2, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# --- BL1COLH01 LeftAxis BI (PLC Axis 3) ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLH01:, LeftAxis_error, BL1_BI_Axis3, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, LeftAxis_moving, BL1_BI_Axis3, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, foreward_limit_LeftAxis, BL1_BI_Axis3, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, backward_limit_LeftAxis, BL1_BI_Axis3, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, Moving_done_LeftAxis, BL1_BI_Axis3, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, PositionSetDone_LeftAxis, BL1_BI_Axis3, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# --- BL1COLH01 RightAxis BI (PLC Axis 4) ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLH01:, RightAxis_error, BL1_BI_Axis4, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, RightAxis_moving, BL1_BI_Axis4, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, foreward_limit_RightAxis, BL1_BI_Axis4, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, backward_limit_RightAxis, BL1_BI_Axis4, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, Moving_done_RightAxis, BL1_BI_Axis4, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, PositionSetDone_RightAxis, BL1_BI_Axis4, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# --- BL1COLV02 TopAxis BI (PLC Axis 5) ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLV02:, TopAxis_error, BL1_BI_Axis5, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, TopAxis_moving, BL1_BI_Axis5, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, foreward_limit_TopAxis, BL1_BI_Axis5, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, backward_limit_TopAxis, BL1_BI_Axis5, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, Moving_done_TopAxis, BL1_BI_Axis5, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, PositionSetDone_TopAxis, BL1_BI_Axis5, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# --- BL1COLV02 BottomAxis BI (PLC Axis 6) ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLV02:, BottomAxis_error, BL1_BI_Axis6, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, BottomAxis_moving, BL1_BI_Axis6, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, foreward_limit_BottomAxis, BL1_BI_Axis6, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, backward_limit_BottomAxis, BL1_BI_Axis6, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, Moving_done_BottomAxis, BL1_BI_Axis6, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, PositionSetDone_BottomAxis, BL1_BI_Axis6, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# --- BL1COLH02 LeftAxis BI (PLC Axis 7) ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLH02:, LeftAxis_error, BL1_BI_Axis7, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, LeftAxis_moving, BL1_BI_Axis7, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, foreward_limit_LeftAxis, BL1_BI_Axis7, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, backward_limit_LeftAxis, BL1_BI_Axis7, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, Moving_done_LeftAxis, BL1_BI_Axis7, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, PositionSetDone_LeftAxis, BL1_BI_Axis7, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# --- BL1COLH02 RightAxis BI (PLC Axis 8) ---
+file "../../db/bi_word.template" { pattern
+{ P, R, PORT, OFFSET, MASK, ZNAM, ONAM, ZSV, OSV, SCAN }
+{ PWFA:BL1:COL:BL1COLH02:, RightAxis_error, BL1_BI_Axis8, 0, 0x0001, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, RightAxis_moving, BL1_BI_Axis8, 0, 0x0002, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, foreward_limit_RightAxis, BL1_BI_Axis8, 0, 0x0004, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, backward_limit_RightAxis, BL1_BI_Axis8, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, Moving_done_RightAxis, BL1_BI_Axis8, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, PositionSetDone_RightAxis, BL1_BI_Axis8, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+}
+
+# ===== AI: PLC -> EPICS REAL values (fc=3, read) =====
+# %MB700 (word offset 350 = reg 12638), 8 axes * 3 REALs
+
+file "../../db/aiFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC, SCAN }
+{ PWFA:BL1:COL:BL1COLV01:, TopAxis_CurrentVelocity, BL1_AI_FLOAT, 0, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, TopAxis_CurrentPosition, BL1_AI_FLOAT, 2, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, LVDTTop_PV, BL1_AI_FLOAT, 4, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+}
+
+file "../../db/aiFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC, SCAN }
+{ PWFA:BL1:COL:BL1COLV01:, BottomAxis_CurrentVelocity, BL1_AI_FLOAT, 6, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, BottomAxis_CurrentPosition, BL1_AI_FLOAT, 8, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, LVDTBottom_PV, BL1_AI_FLOAT, 10, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+}
+
+file "../../db/aiFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC, SCAN }
+{ PWFA:BL1:COL:BL1COLH01:, LeftAxis_CurrentVelocity, BL1_AI_FLOAT, 12, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, LeftAxis_CurrentPosition, BL1_AI_FLOAT, 14, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, LVDTLeft_PV, BL1_AI_FLOAT, 16, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+}
+
+file "../../db/aiFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC, SCAN }
+{ PWFA:BL1:COL:BL1COLH01:, RightAxis_CurrentVelocity, BL1_AI_FLOAT, 18, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, RightAxis_CurrentPosition, BL1_AI_FLOAT, 20, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, LVDTRight_PV, BL1_AI_FLOAT, 22, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+}
+
+file "../../db/aiFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC, SCAN }
+{ PWFA:BL1:COL:BL1COLV02:, TopAxis_CurrentVelocity, BL1_AI_FLOAT, 24, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, TopAxis_CurrentPosition, BL1_AI_FLOAT, 26, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, LVDTTop_PV, BL1_AI_FLOAT, 28, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+}
+
+file "../../db/aiFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC, SCAN }
+{ PWFA:BL1:COL:BL1COLV02:, BottomAxis_CurrentVelocity, BL1_AI_FLOAT, 30, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, BottomAxis_CurrentPosition, BL1_AI_FLOAT, 32, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, LVDTBottom_PV, BL1_AI_FLOAT, 34, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+}
+
+file "../../db/aiFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC, SCAN }
+{ PWFA:BL1:COL:BL1COLH02:, LeftAxis_CurrentVelocity, BL1_AI_FLOAT, 36, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, LeftAxis_CurrentPosition, BL1_AI_FLOAT, 38, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, LVDTLeft_PV, BL1_AI_FLOAT, 40, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+}
+
+file "../../db/aiFloat64.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, LOPR, HOPR, PREC, SCAN }
+{ PWFA:BL1:COL:BL1COLH02:, RightAxis_CurrentVelocity, BL1_AI_FLOAT, 42, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, RightAxis_CurrentPosition, BL1_AI_FLOAT, 44, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, LVDTRight_PV, BL1_AI_FLOAT, 46, FLOAT32_LE, -1e6, 1e6, 4, "I/O Intr" }
+}
+
+# ===== Error info (shared across all devices) =====
+file "../../db/int64in.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, SCAN }
+{ PWFA:BL1:COL:BL1COLV01:, ErrorId, BL1_ErrorId, 0, INT32_LE, "I/O Intr" }
+}
+
+file "../../db/stringin.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, SCAN }
+{ PWFA:BL1:COL:BL1COLV01:, ErrorDescription, BL1_ErrorStr, 0, STRING_LOW_HIGH, "I/O Intr" }
+}
+
+file "../../db/int64in.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, SCAN }
+{ PWFA:BL1:COL:BL1COLH01:, ErrorId, BL1_ErrorId, 0, INT32_LE, "I/O Intr" }
+}
+
+file "../../db/stringin.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, SCAN }
+{ PWFA:BL1:COL:BL1COLH01:, ErrorDescription, BL1_ErrorStr, 0, STRING_LOW_HIGH, "I/O Intr" }
+}
+
+file "../../db/int64in.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, SCAN }
+{ PWFA:BL1:COL:BL1COLV02:, ErrorId, BL1_ErrorId, 0, INT32_LE, "I/O Intr" }
+}
+
+file "../../db/stringin.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, SCAN }
+{ PWFA:BL1:COL:BL1COLV02:, ErrorDescription, BL1_ErrorStr, 0, STRING_LOW_HIGH, "I/O Intr" }
+}
+
+file "../../db/int64in.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, SCAN }
+{ PWFA:BL1:COL:BL1COLH02:, ErrorId, BL1_ErrorId, 0, INT32_LE, "I/O Intr" }
+}
+
+file "../../db/stringin.template" { pattern
+{ P, R, PORT, OFFSET, DATA_TYPE, SCAN }
+{ PWFA:BL1:COL:BL1COLH02:, ErrorDescription, BL1_ErrorStr, 0, STRING_LOW_HIGH, "I/O Intr" }
+}
