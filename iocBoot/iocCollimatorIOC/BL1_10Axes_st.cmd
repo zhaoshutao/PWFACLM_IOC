@@ -1,14 +1,14 @@
 #!../../bin/windows-x64/CollimatorIOC
 
 # BL1 10-Axis Collimator IOC Startup Script
-# PLC: 192.168.201.137:502 (single TwinCAT, 10 axes)
+# PLC: 192.168.245.52:502 (single TwinCAT, 10 axes)
 # Register map confirmed from GVL.TcGVL (base = 12288 = %MW0)
 
 < envPaths
 
 # Lock CA server to single interface to avoid duplicate detection
-epicsEnvSet("EPICS_CAS_INTF_ADDR_LIST","192.168.201.137")
-epicsEnvSet("EPICS_CAS_BEACON_ADDR_LIST","192.168.201.137")
+epicsEnvSet("EPICS_CAS_INTF_ADDR_LIST","192.168.245.52")
+epicsEnvSet("EPICS_CAS_BEACON_ADDR_LIST","192.168.245.52")
 
 cd "${TOP}"
 
@@ -23,7 +23,7 @@ dbLoadRecords "db/CollimatorIOCVersion.db", "user=balmy"
 # ================================================================
 # Modbus TCP connection to TWINCAT PLC
 # ================================================================
-drvAsynIPPortConfigure("BL1", "192.168.201.137:502", 0, 0, 1)
+drvAsynIPPortConfigure("BL1", "192.168.245.52:502", 0, 0, 1)
 modbusInterposeConfig("BL1", 0, 2000, 0)
 
 # drvModbusAsynConfigure params:
@@ -94,7 +94,7 @@ drvModbusAsynConfigure("BL1_ErrorStr",   "BL1", 0, 3, 12700, 125, 0, 100, "simul
 # Load 10-axis PV substitutions
 # ================================================================
 cd "${TOP}/iocBoot/${IOC}"
-dbLoadTemplate("BL1_8Axes.substitutions")
+dbLoadTemplate("BL1_10Axes.substitutions")
 
 #- Set this to see messages from mySub
 #-var mySubDebug 1

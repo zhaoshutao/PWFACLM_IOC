@@ -90,6 +90,8 @@ file "../../db/bo_word.template" { pattern
 { PWFA:BL1:COL:BL1COLV01:, btn_SetPosition_TopAxis, BL1_BO_Axis1, 0, 0x0020, Low, High }
 { PWFA:BL1:COL:BL1COLV01:, LVDTTop_FunctionOn, BL1_BO_Axis1, 0, 0x0040, Low, High }
 { PWFA:BL1:COL:BL1COLV01:, LVDTTop_ManualReleaseAlarm, BL1_BO_Axis1, 0, 0x0080, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_Power_TopAxis, BL1_BO_Axis1, 0, 0x0100, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_EStop_TopAxis, BL1_BO_Axis1, 0, 0x0200, Low, High }
 }
 
 # --- BL1COLV01 BottomAxis BO (PLC Axis 2) ---
@@ -103,6 +105,8 @@ file "../../db/bo_word.template" { pattern
 { PWFA:BL1:COL:BL1COLV01:, btn_SetPosition_BottomAxis, BL1_BO_Axis2, 0, 0x0020, Low, High }
 { PWFA:BL1:COL:BL1COLV01:, LVDTBottom_FunctionOn, BL1_BO_Axis2, 0, 0x0040, Low, High }
 { PWFA:BL1:COL:BL1COLV01:, LVDTBottom_ManualReleaseAlarm, BL1_BO_Axis2, 0, 0x0080, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_Power_BottomAxis, BL1_BO_Axis2, 0, 0x0100, Low, High }
+{ PWFA:BL1:COL:BL1COLV01:, btn_EStop_BottomAxis, BL1_BO_Axis2, 0, 0x0200, Low, High }
 }
 
 # --- BL1COLH01 LeftAxis BO (PLC Axis 3) ---
@@ -116,6 +120,8 @@ file "../../db/bo_word.template" { pattern
 { PWFA:BL1:COL:BL1COLH01:, btn_SetPosition_LeftAxis, BL1_BO_Axis3, 0, 0x0020, Low, High }
 { PWFA:BL1:COL:BL1COLH01:, LVDTLeft_FunctionOn, BL1_BO_Axis3, 0, 0x0040, Low, High }
 { PWFA:BL1:COL:BL1COLH01:, LVDTLeft_ManualReleaseAlarm, BL1_BO_Axis3, 0, 0x0080, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_Power_LeftAxis, BL1_BO_Axis3, 0, 0x0100, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_EStop_LeftAxis, BL1_BO_Axis3, 0, 0x0200, Low, High }
 }
 
 # --- BL1COLH01 RightAxis BO (PLC Axis 4) ---
@@ -129,6 +135,8 @@ file "../../db/bo_word.template" { pattern
 { PWFA:BL1:COL:BL1COLH01:, btn_SetPosition_RightAxis, BL1_BO_Axis4, 0, 0x0020, Low, High }
 { PWFA:BL1:COL:BL1COLH01:, LVDTRight_FunctionOn, BL1_BO_Axis4, 0, 0x0040, Low, High }
 { PWFA:BL1:COL:BL1COLH01:, LVDTRight_ManualReleaseAlarm, BL1_BO_Axis4, 0, 0x0080, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_Power_RightAxis, BL1_BO_Axis4, 0, 0x0100, Low, High }
+{ PWFA:BL1:COL:BL1COLH01:, btn_EStop_RightAxis, BL1_BO_Axis4, 0, 0x0200, Low, High }
 }
 
 # --- BL1COLV02 TopAxis BO (PLC Axis 5) ---
@@ -142,6 +150,8 @@ file "../../db/bo_word.template" { pattern
 { PWFA:BL1:COL:BL1COLV02:, btn_SetPosition_TopAxis, BL1_BO_Axis5, 0, 0x0020, Low, High }
 { PWFA:BL1:COL:BL1COLV02:, LVDTTop_FunctionOn, BL1_BO_Axis5, 0, 0x0040, Low, High }
 { PWFA:BL1:COL:BL1COLV02:, LVDTTop_ManualReleaseAlarm, BL1_BO_Axis5, 0, 0x0080, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_Power_TopAxis, BL1_BO_Axis5, 0, 0x0100, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_EStop_TopAxis, BL1_BO_Axis5, 0, 0x0200, Low, High }
 }
 
 # --- BL1COLV02 BottomAxis BO (PLC Axis 6) ---
@@ -155,6 +165,8 @@ file "../../db/bo_word.template" { pattern
 { PWFA:BL1:COL:BL1COLV02:, btn_SetPosition_BottomAxis, BL1_BO_Axis6, 0, 0x0020, Low, High }
 { PWFA:BL1:COL:BL1COLV02:, LVDTBottom_FunctionOn, BL1_BO_Axis6, 0, 0x0040, Low, High }
 { PWFA:BL1:COL:BL1COLV02:, LVDTBottom_ManualReleaseAlarm, BL1_BO_Axis6, 0, 0x0080, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_Power_BottomAxis, BL1_BO_Axis6, 0, 0x0100, Low, High }
+{ PWFA:BL1:COL:BL1COLV02:, btn_EStop_BottomAxis, BL1_BO_Axis6, 0, 0x0200, Low, High }
 }
 
 # --- BL1COLH02 LeftAxis BO (PLC Axis 7) ---
@@ -168,6 +180,8 @@ file "../../db/bo_word.template" { pattern
 { PWFA:BL1:COL:BL1COLH02:, btn_SetPosition_LeftAxis, BL1_BO_Axis7, 0, 0x0020, Low, High }
 { PWFA:BL1:COL:BL1COLH02:, LVDTLeft_FunctionOn, BL1_BO_Axis7, 0, 0x0040, Low, High }
 { PWFA:BL1:COL:BL1COLH02:, LVDTLeft_ManualReleaseAlarm, BL1_BO_Axis7, 0, 0x0080, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_Power_LeftAxis, BL1_BO_Axis7, 0, 0x0100, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_EStop_LeftAxis, BL1_BO_Axis7, 0, 0x0200, Low, High }
 }
 
 # --- BL1COLH02 RightAxis BO (PLC Axis 8) ---
@@ -181,6 +195,8 @@ file "../../db/bo_word.template" { pattern
 { PWFA:BL1:COL:BL1COLH02:, btn_SetPosition_RightAxis, BL1_BO_Axis8, 0, 0x0020, Low, High }
 { PWFA:BL1:COL:BL1COLH02:, LVDTRight_FunctionOn, BL1_BO_Axis8, 0, 0x0040, Low, High }
 { PWFA:BL1:COL:BL1COLH02:, LVDTRight_ManualReleaseAlarm, BL1_BO_Axis8, 0, 0x0080, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_Power_RightAxis, BL1_BO_Axis8, 0, 0x0100, Low, High }
+{ PWFA:BL1:COL:BL1COLH02:, btn_EStop_RightAxis, BL1_BO_Axis8, 0, 0x0200, Low, High }
 }
 
 # --- BL2COL1 Axis BO (PLC Axis 9) ---
@@ -194,6 +210,8 @@ file "../../db/bo_word.template" { pattern
 { PWFA:BL2:COL:BL2COL1:, btn_SetPosition_Axis, BL1_BO_Axis9, 0, 0x0020, Low, High }
 { PWFA:BL2:COL:BL2COL1:, LVDTA_FunctionOn, BL1_BO_Axis9, 0, 0x0040, Low, High }
 { PWFA:BL2:COL:BL2COL1:, LVDTA_ManualReleaseAlarm, BL1_BO_Axis9, 0, 0x0080, Low, High }
+{ PWFA:BL2:COL:BL2COL1:, btn_Power_Axis, BL1_BO_Axis9, 0, 0x0100, Low, High }
+{ PWFA:BL2:COL:BL2COL1:, btn_EStop_Axis, BL1_BO_Axis9, 0, 0x0200, Low, High }
 }
 
 # --- BL2COL2 Axis BO (PLC Axis 10) ---
@@ -207,6 +225,8 @@ file "../../db/bo_word.template" { pattern
 { PWFA:BL2:COL:BL2COL2:, btn_SetPosition_Axis, BL1_BO_Axis10, 0, 0x0020, Low, High }
 { PWFA:BL2:COL:BL2COL2:, LVDTA_FunctionOn, BL1_BO_Axis10, 0, 0x0040, Low, High }
 { PWFA:BL2:COL:BL2COL2:, LVDTA_ManualReleaseAlarm, BL1_BO_Axis10, 0, 0x0080, Low, High }
+{ PWFA:BL2:COL:BL2COL2:, btn_Power_Axis, BL1_BO_Axis10, 0, 0x0100, Low, High }
+{ PWFA:BL2:COL:BL2COL2:, btn_EStop_Axis, BL1_BO_Axis10, 0, 0x0200, Low, High }
 }
 
 # ===== AO: EPICS -> PLC REAL params (fc=16) =====
@@ -389,6 +409,8 @@ file "../../db/bi_word.template" { pattern
 { PWFA:BL1:COL:BL1COLV01:, backward_limit_TopAxis, BL1_BI_Axis1, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLV01:, Moving_done_TopAxis, BL1_BI_Axis1, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLV01:, PositionSetDone_TopAxis, BL1_BI_Axis1, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, TopAxis_powerStatus, BL1_BI_Axis1, 0, 0x0040, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, TopAxis_ESTOP_status, BL1_BI_Axis1, 0, 0x0080, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 }
 
 # --- BL1COLV01 BottomAxis BI (PLC Axis 2) ---
@@ -400,6 +422,8 @@ file "../../db/bi_word.template" { pattern
 { PWFA:BL1:COL:BL1COLV01:, backward_limit_BottomAxis, BL1_BI_Axis2, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLV01:, Moving_done_BottomAxis, BL1_BI_Axis2, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLV01:, PositionSetDone_BottomAxis, BL1_BI_Axis2, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, BottomAxis_powerStatus, BL1_BI_Axis2, 0, 0x0040, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV01:, BottomAxis_ESTOP_status, BL1_BI_Axis2, 0, 0x0080, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 }
 
 # --- BL1COLH01 LeftAxis BI (PLC Axis 3) ---
@@ -411,6 +435,8 @@ file "../../db/bi_word.template" { pattern
 { PWFA:BL1:COL:BL1COLH01:, backward_limit_LeftAxis, BL1_BI_Axis3, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLH01:, Moving_done_LeftAxis, BL1_BI_Axis3, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLH01:, PositionSetDone_LeftAxis, BL1_BI_Axis3, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, LeftAxis_powerStatus, BL1_BI_Axis3, 0, 0x0040, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, LeftAxis_ESTOP_status, BL1_BI_Axis3, 0, 0x0080, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 }
 
 # --- BL1COLH01 RightAxis BI (PLC Axis 4) ---
@@ -422,6 +448,8 @@ file "../../db/bi_word.template" { pattern
 { PWFA:BL1:COL:BL1COLH01:, backward_limit_RightAxis, BL1_BI_Axis4, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLH01:, Moving_done_RightAxis, BL1_BI_Axis4, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLH01:, PositionSetDone_RightAxis, BL1_BI_Axis4, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, RightAxis_powerStatus, BL1_BI_Axis4, 0, 0x0040, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH01:, RightAxis_ESTOP_status, BL1_BI_Axis4, 0, 0x0080, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 }
 
 # --- BL1COLV02 TopAxis BI (PLC Axis 5) ---
@@ -433,6 +461,8 @@ file "../../db/bi_word.template" { pattern
 { PWFA:BL1:COL:BL1COLV02:, backward_limit_TopAxis, BL1_BI_Axis5, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLV02:, Moving_done_TopAxis, BL1_BI_Axis5, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLV02:, PositionSetDone_TopAxis, BL1_BI_Axis5, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, TopAxis_powerStatus, BL1_BI_Axis5, 0, 0x0040, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, TopAxis_ESTOP_status, BL1_BI_Axis5, 0, 0x0080, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 }
 
 # --- BL1COLV02 BottomAxis BI (PLC Axis 6) ---
@@ -444,6 +474,8 @@ file "../../db/bi_word.template" { pattern
 { PWFA:BL1:COL:BL1COLV02:, backward_limit_BottomAxis, BL1_BI_Axis6, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLV02:, Moving_done_BottomAxis, BL1_BI_Axis6, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLV02:, PositionSetDone_BottomAxis, BL1_BI_Axis6, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, BottomAxis_powerStatus, BL1_BI_Axis6, 0, 0x0040, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLV02:, BottomAxis_ESTOP_status, BL1_BI_Axis6, 0, 0x0080, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 }
 
 # --- BL1COLH02 LeftAxis BI (PLC Axis 7) ---
@@ -455,6 +487,8 @@ file "../../db/bi_word.template" { pattern
 { PWFA:BL1:COL:BL1COLH02:, backward_limit_LeftAxis, BL1_BI_Axis7, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLH02:, Moving_done_LeftAxis, BL1_BI_Axis7, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLH02:, PositionSetDone_LeftAxis, BL1_BI_Axis7, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, LeftAxis_powerStatus, BL1_BI_Axis7, 0, 0x0040, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, LeftAxis_ESTOP_status, BL1_BI_Axis7, 0, 0x0080, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 }
 
 # --- BL1COLH02 RightAxis BI (PLC Axis 8) ---
@@ -466,6 +500,8 @@ file "../../db/bi_word.template" { pattern
 { PWFA:BL1:COL:BL1COLH02:, backward_limit_RightAxis, BL1_BI_Axis8, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLH02:, Moving_done_RightAxis, BL1_BI_Axis8, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL1:COL:BL1COLH02:, PositionSetDone_RightAxis, BL1_BI_Axis8, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, RightAxis_powerStatus, BL1_BI_Axis8, 0, 0x0040, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL1:COL:BL1COLH02:, RightAxis_ESTOP_status, BL1_BI_Axis8, 0, 0x0080, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 }
 
 # --- BL2COL1 Axis BI (PLC Axis 9) ---
@@ -477,6 +513,8 @@ file "../../db/bi_word.template" { pattern
 { PWFA:BL2:COL:BL2COL1:, backward_limit_Axis, BL1_BI_Axis9, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL2:COL:BL2COL1:, Moving_done_Axis, BL1_BI_Axis9, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL2:COL:BL2COL1:, PositionSetDone_Axis, BL1_BI_Axis9, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL2:COL:BL2COL1:, Axis_powerStatus, BL1_BI_Axis9, 0, 0x0040, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL2:COL:BL2COL1:, Axis_ESTOP_status, BL1_BI_Axis9, 0, 0x0080, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 }
 
 # --- BL2COL2 Axis BI (PLC Axis 10) ---
@@ -488,6 +526,8 @@ file "../../db/bi_word.template" { pattern
 { PWFA:BL2:COL:BL2COL2:, backward_limit_Axis, BL1_BI_Axis10, 0, 0x0008, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL2:COL:BL2COL2:, Moving_done_Axis, BL1_BI_Axis10, 0, 0x0010, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 { PWFA:BL2:COL:BL2COL2:, PositionSetDone_Axis, BL1_BI_Axis10, 0, 0x0020, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL2:COL:BL2COL2:, Axis_powerStatus, BL1_BI_Axis10, 0, 0x0040, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
+{ PWFA:BL2:COL:BL2COL2:, Axis_ESTOP_status, BL1_BI_Axis10, 0, 0x0080, Low, High, NO_ALARM, NO_ALARM, "I/O Intr" }
 }
 
 # ===== AI: PLC -> EPICS REAL values (fc=3, read) =====
